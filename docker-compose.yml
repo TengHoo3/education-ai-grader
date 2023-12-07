@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  education_grade:
+    container_name: "education_grade"
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8501:8501"  # This is for Streamlit, change if you need a different port
